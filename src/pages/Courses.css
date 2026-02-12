@@ -1,0 +1,15 @@
+.course-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.course-info strong {
+  color: #fff;
+  font-size: 15px;
+}
+
+.course-info span {
+  color: #8b92a7;
+  font-size: 13px;
+}

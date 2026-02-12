@@ -1,0 +1,10 @@
+.order-items {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.order-items div {
+  color: #fff;
+  font-size: 14px;
+}
