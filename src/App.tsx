@@ -8,6 +8,10 @@ import Products from './pages/Products';
 import Orders from './pages/Orders';
 import Users from './pages/Users';
 import Banners from './pages/Banners';
+import Applications from './pages/Applications';
+import Messages from './pages/Messages';
+import SEO from './pages/SEO';
+import Audit from './pages/Audit';
 import './App.css';
 
 function ProtectedRoute({ children }: { children: React.ReactElement }) {
@@ -53,9 +57,29 @@ function AppRoutes() {
           <AdminLayout><Orders /></AdminLayout>
         </ProtectedRoute>
       } />
+      <Route path="/admin/applications" element={
+        <ProtectedRoute>
+          <AdminLayout><Applications /></AdminLayout>
+        </ProtectedRoute>
+      } />
+      <Route path="/admin/messages" element={
+        <ProtectedRoute>
+          <AdminLayout><Messages /></AdminLayout>
+        </ProtectedRoute>
+      } />
       <Route path="/admin/banners" element={
         <ProtectedRoute>
           <AdminLayout><Banners /></AdminLayout>
+        </ProtectedRoute>
+      } />
+      <Route path="/admin/seo" element={
+        <ProtectedRoute>
+          <AdminLayout><SEO /></AdminLayout>
+        </ProtectedRoute>
+      } />
+      <Route path="/admin/audit" element={
+        <ProtectedRoute>
+          <AdminLayout><Audit /></AdminLayout>
         </ProtectedRoute>
       } />
       <Route path="/" element={<Navigate to="/admin" />} />

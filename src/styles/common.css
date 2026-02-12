@@ -1,7 +1,12 @@
 .page-container {
-  margin-left: 240px;
+  margin-left: 260px;
   padding: 30px;
   min-height: 100vh;
+  transition: margin-left 0.3s ease;
+}
+
+.sidebar.collapsed ~ .main-content .page-container {
+  margin-left: 80px;
 }
 
 .page-header {

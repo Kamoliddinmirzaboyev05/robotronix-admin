@@ -1,6 +1,6 @@
 import { useState, type FormEvent } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { FaRobot, FaEnvelope, FaLock, FaEye, FaEyeSlash } from 'react-icons/fa';
+import { FaEnvelope, FaLock, FaEye, FaEyeSlash } from 'react-icons/fa';
 import { useAuth } from '../context/AuthContext';
 import './Login.css';
 
@@ -34,7 +34,7 @@ export default function Login() {
         <div className="login-card">
           <div className="login-header">
             <div className="logo-icon">
-              <FaRobot />
+              <img src="/robologo.png" alt="Robotronix" />
             </div>
             <h1>Robotronix Admin</h1>
             <p>Admin paneliga kirish</p>

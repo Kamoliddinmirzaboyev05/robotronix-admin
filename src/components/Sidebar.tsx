@@ -2,7 +2,7 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import { 
   FaHome, FaUsers, FaBook, FaBox, FaShoppingCart, 
   FaClipboardList, FaEnvelope, FaImage, FaSearch, 
-  FaHistory, FaGlobe, FaSignOutAlt, FaRobot, FaChevronDown 
+  FaHistory, FaGlobe, FaSignOutAlt, FaChevronDown 
 } from 'react-icons/fa';
 import { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
@@ -43,7 +43,7 @@ export default function Sidebar() {
     <aside className={`sidebar ${isCollapsed ? 'collapsed' : ''}`}>
       <div className="sidebar-brand">
         <div className="brand-logo">
-          <FaRobot />
+          <img src="/robologo.png" alt="Robotronix" />
         </div>
         {!isCollapsed && (
           <div className="brand-text">

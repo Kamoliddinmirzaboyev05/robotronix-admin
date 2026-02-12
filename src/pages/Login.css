@@ -61,14 +61,20 @@
   width: 80px;
   height: 80px;
   margin: 0 auto 20px;
-  background: linear-gradient(135deg, #0066ff 0%, #00ccff 100%);
+  background: white;
   border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 40px;
-  color: white;
+  padding: 12px;
   animation: float 3s ease-in-out infinite;
+  box-shadow: 0 10px 30px rgba(0, 102, 255, 0.3);
+}
+
+.logo-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 @keyframes float {

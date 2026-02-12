@@ -1,0 +1,115 @@
+.filter-tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.filter-tabs button {
+  padding: 10px 20px;
+  background: #1a1d29;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: #8b92a7;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.filter-tabs button:hover {
+  background: rgba(0, 102, 255, 0.1);
+  border-color: #0066ff;
+  color: #0066ff;
+}
+
+.filter-tabs button.active {
+  background: linear-gradient(135deg, #0066ff 0%, #00ccff 100%);
+  border-color: transparent;
+  color: white;
+}
+
+.applications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.application-card {
+  background: #1a1d29;
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.application-card:hover {
+  transform: translateY(-4px);
+}
+
+.application-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.application-header h3 {
+  color: #fff;
+  font-size: 16px;
+  margin: 0;
+  flex: 1;
+}
+
+.application-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #8b92a7;
+  font-size: 14px;
+}
+
+.info-row svg {
+  color: #0066ff;
+  font-size: 14px;
+}
+
+.date-label {
+  color: #5a5f73;
+  font-size: 13px;
+}
+
+.application-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.status-select {
+  flex: 1;
+  padding: 10px 12px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.status-select:focus {
+  outline: none;
+  border-color: #0066ff;
+}
+
+.status-select option {
+  background: #1a1d29;
+  color: #fff;
+}
